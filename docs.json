@@ -1,0 +1,69 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Joe Fajen — Technical Writer",
+  "colors": {
+    "primary": "#2563EB",
+    "light": "#60A5FA",
+    "dark": "#1E40AF"
+  },
+    "navigation": {
+    "groups": [
+      {
+        "group": "Home",
+        "pages": [
+          "index",
+          "about"
+        ]
+      },
+      {
+        "group": "Writing Samples",
+        "pages": [
+          "samples/api-documentation",
+          "samples/product-manuals",
+          "samples/developer-guides",
+          "samples/ai-documentation",
+          "samples/articles"
+        ]
+      },
+      {
+        "group": "Projects",
+        "pages": [
+          "projects/cardano-marlowe",
+          "projects/blockfrost",
+          "projects/ai-tools",
+          "projects/docs-infrastructure"
+        ]
+      },
+      {
+        "group": "Resume",
+        "pages": [
+          "resume"
+        ]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/josephfajen7782211/"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/joseph-fajen"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Get in Touch",
+      "href": "mailto:joefajen@gmail.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/josephfajen7782211/",
+      "github": "https://github.com/joseph-fajen"
+    }
+  }
+}

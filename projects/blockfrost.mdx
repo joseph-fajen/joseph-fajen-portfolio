@@ -1,0 +1,69 @@
+---
+title: "Blockfrost Platform"
+description: "Information architecture improvements and AI-powered FAQ development for Cardano's leading blockchain API"
+---
+
+## The Project
+
+[Blockfrost](https://blockfrost.io/) is a leading blockchain API provider for the Cardano ecosystem. During my time at Input Output Global, I was assigned to improve their platform documentation.
+
+**Live:** [platform.blockfrost.io](https://platform.blockfrost.io/)
+
+---
+
+## What I Delivered
+
+### Information Architecture Improvements
+
+The Blockfrost platform documentation needed restructuring to better serve developers at different stages of adoption. I:
+
+- Analyzed the existing documentation structure against user journeys
+- Clarified developer-facing docs to help early adopters get up and running faster
+- Verified documentation accuracy against the actual API behavior
+- Improved navigation and discoverability
+
+### AI-Powered FAQ Development
+
+The FAQ section required a different approach. Instead of guessing what users needed, I built tooling to analyze actual user conversations.
+
+**The tool I created:** [ChatDoc-InsightMiner-PromptLab](https://github.com/joseph-fajen/ChatDoc-InsightMiner-PromptLab)
+
+<CardGroup cols={2}>
+  <Card title="User Need Analysis" icon="magnifying-glass">
+    Python toolkit for extracting insights from chat logs and documentation using vector databases
+    and multi-LLM comparison (OpenAI, Anthropic, Gemini).
+  </Card>
+  <Card title="Pattern Identification" icon="chart-network">
+    Analyzed real user conversations to identify recurring questions, confusion points,
+    and documentation gaps.
+  </Card>
+  <Card title="Multi-Model Validation" icon="code-compare">
+    Cross-validated findings across multiple LLMs to ensure the identified needs were
+    genuine patterns, not model artifacts.
+  </Card>
+  <Card title="Actionable Output" icon="list-check">
+    Generated prioritized list of FAQ topics based on actual user friction,
+    not assumptions.
+  </Card>
+</CardGroup>
+
+**The result:** [platform.blockfrost.io/faq](https://platform.blockfrost.io/faq) — an FAQ section built on data about what users actually struggled with.
+
+---
+
+## Why This Matters
+
+This project demonstrates a key principle: **when writing isn't enough, build the tooling.**
+
+Instead of guessing which questions users had, I:
+1. Built a tool to analyze their actual conversations
+2. Used that data to prioritize FAQ content
+3. Created documentation addressing verified user needs
+
+The ChatDoc-InsightMiner-PromptLab toolkit is [open source on GitHub](https://github.com/joseph-fajen/ChatDoc-InsightMiner-PromptLab) and applicable to any documentation project where user conversation data is available.
+
+---
+
+## Tech Stack
+
+`Python` · `Vector Databases` · `OpenAI API` · `Anthropic API` · `Gemini API` · `Markdown`
