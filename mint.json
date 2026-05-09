@@ -1,6 +1,8 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Joe Fajen — Technical Writer",
+  "name": "Joseph Fajen — Technical Writer",
+  "description": "Portfolio of a Senior Technical Writer specializing in developer documentation",
+  "favicon": "✍️",
   "colors": {
     "primary": "#2563EB",
     "light": "#60A5FA",
