@@ -12,6 +12,9 @@
       "to": "#7C3AED"
     }
   },
+  "modeToggle": {
+    "default": "dark"
+  },
   "topbarLinks": [
     {
       "name": "LinkedIn",
