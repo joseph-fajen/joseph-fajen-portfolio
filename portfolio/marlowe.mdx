@@ -1,25 +1,19 @@
 ---
-title: "Marlowe / Input Output Global"
+title: "Marlowe Documentation"
 description: "17,900 lines of developer documentation for a smart contract platform — built from the ground up"
 ---
 
-## The project
+## The Project
 
 **Input Output Global (IOG)** — the blockchain research and engineering company behind the Cardano protocol — needed developer documentation for Marlowe, their smart contract platform tailored for financial applications.
 
 I owned it. 13 months. 78% of repository commits. Here's what that looked like.
 
-<a href="https://docs.marlowe.iohk.io/docs/introduction" target="_blank">
-  <Button>View Live Documentation →</Button>
-</a>
-
-<a href="https://joseph-fajen.github.io/marlowe-api-docs/" target="_blank">
-  <Button variant="secondary">View Enhanced API Reference →</Button>
-</a>
+**Live documentation:** [docs.marlowe.iohk.io](https://docs.marlowe.iohk.io/docs/introduction)
 
 ---
 
-## What I built
+## What I Delivered
 
 <CardGroup cols={2}>
   <Card title="17,900+ Lines" icon="file-lines">
@@ -30,21 +24,19 @@ I owned it. 13 months. 78% of repository commits. Here's what that looked like.
     End-to-end tutorial series taking developers from first Marlowe contract to
     production deployment. Structured around 5 user personas.
   </Card>
-  <Card title="91-Schema OpenAPI Spec" icon="code">
-    Collaborated with engineers to integrate a 91-schema OpenAPI specification
+  <Card title="93-Schema OpenAPI Spec" icon="code">
+    Collaborated with engineers to integrate a 93-schema OpenAPI specification
     directly into the documentation site. Auto-generated reference from source.
-    After the project concluded, I returned to enhance the spec with semantic tags,
-    response documentation, and workflow examples.
   </Card>
-  <Card title="Essential Cardano AI Assistant" icon="brain">
-    Built a RAG chatbot indexing 2,500 documents from 8 sources. 20+ prompt
-    engineering iterations with adversarial testing, no hallucinations detected.
+  <Card title="5 User Personas" icon="users">
+    Designed information architecture with visual pathway diagrams so each developer
+    type could find their appropriate starting point.
   </Card>
 </CardGroup>
 
 ---
 
-## The scope in numbers
+## The Scope in Numbers
 
 | Metric | Value |
 |--------|-------|
@@ -52,15 +44,14 @@ I owned it. 13 months. 78% of repository commits. Here's what that looked like.
 | Files | 124 |
 | Merged PRs | 59 |
 | Repository commit share | 78% |
-| OpenAPI schemas integrated | 91 |
+| OpenAPI schemas integrated | 93 |
 | Tutorial count | 41 |
-| AI assistant document sources | 8 (2,500 docs) |
 | User personas documented | 5 |
 | Duration | 13 months |
 
 ---
 
-## Information architecture
+## Information Architecture
 
 Marlowe attracts developers from different backgrounds — Haskell devs, Solidity devs, non-technical contract designers, infrastructure operators. One entry point doesn't work for all of them.
 
@@ -68,33 +59,22 @@ I designed an IA with **5 user personas** and **visual pathway diagrams** so eac
 
 ---
 
-## The Essential Cardano AI Assistant
+## Enhanced OpenAPI Reference
 
-<AccordionGroup>
-  <Accordion title="Why we built it">
-    Marlowe documentation spans multiple repos, Cardano Developer Portal, GitHub, and
-    CIP specifications. Developers were spending too long cross-referencing sources.
-    An AI assistant that could synthesize answers from all sources reduced that friction.
-  </Accordion>
-  <Accordion title="Technical implementation">
-    Full-stack RAG pipeline. 2,500 documents indexed from 8 sources. Semantic search
-    with citation generation — every answer links back to the source document.
-  </Accordion>
-  <Accordion title="The hallucination problem">
-    This is blockchain documentation. A hallucinated answer could mean a broken smart contract
-    and real financial loss. I ran 20+ prompt engineering iterations and adversarial testing
-    cycles — no hallucinations detected during testing.
-  </Accordion>
-</AccordionGroup>
+After the Marlowe project concluded, I returned to the OpenAPI specification to enhance it for better developer experience.
 
-<a href="https://powerful-motivation-production.up.railway.app/" target="_blank">
-  <Button variant="secondary">Try Live Demo →</Button>
-</a>
+The original spec was functional but minimal. I added:
 
-<Note>Live demo — knowledge base current as of December 2025.</Note>
+- **Semantic operation tags** — grouping endpoints by workflow (contract creation, transaction submission, queries)
+- **Response documentation** — structured descriptions for all response types
+- **Workflow examples** — showing how endpoints chain together for common tasks
+
+**Result:** [Enhanced API Reference](https://joseph-fajen.github.io/marlowe-api-docs/)
+
+> This work demonstrates my approach to API documentation: specs should teach workflows, not just list endpoints. Developers need to understand how pieces fit together.
 
 ---
 
-## Tech stack
+## Tech Stack
 
-`Markdown` · `MDX` · `Docusaurus` · `OpenAPI/Swagger` · `Python` · `Vector Databases` · `RAG Pipelines` · `Git/GitHub` · `GitHub Actions`
+`Markdown` · `MDX` · `Docusaurus` · `OpenAPI/Swagger` · `Git/GitHub` · `GitHub Actions`

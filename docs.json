@@ -20,9 +20,11 @@
         "group": "Portfolio",
         "pages": [
           "portfolio/marlowe",
+          "portfolio/essential-cardano-ai",
           "portfolio/aja-video",
-          "portfolio/ai-projects",
           "portfolio/blockfrost",
+          "portfolio/isee-v2",
+          "portfolio/book-of-archon",
           "portfolio/articles"
         ]
       },

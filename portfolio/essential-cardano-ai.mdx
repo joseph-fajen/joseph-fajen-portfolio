@@ -1,0 +1,77 @@
+---
+title: "Essential Cardano AI Assistant"
+description: "An accuracy-first RAG chatbot indexing 2,572 documents across eight documentation sites of the Cardano ecosystem"
+---
+
+## The Project
+
+At Input Output Global, there are many documentation sites covering multiple projects and knowledge sources. A common question that would arise was, "Which doc site should I look at to find what I'm looking for, and how do I find it?"
+
+I designed and built the Essential Cardano AI Assistant — a RAG chatbot that could synthesize answers, with citations, from eight selected sources and reduce that friction.
+
+The Essential Cardano AI Assistant brought together 2,572 files from across eight documentation sites:
+
+| Source | URL | Files |
+|--------|-----|-------|
+| Essential Cardano | [essentialcardano.io](https://essentialcardano.io) | 979 |
+| IOG Research | [iog.io/en/research](https://iog.io/en/research) | 625 |
+| Intersect Knowledge Base | [docs.intersectmbo.org](https://docs.intersectmbo.org) | 354 |
+| Developer Resources | [developers.cardano.org](https://developers.cardano.org) | 251 |
+| Intersect News | [intersectmbo.org/news](https://intersectmbo.org/news) | 100 |
+| IOG News | [iog.io/news](https://iog.io/news) | 95 |
+| Plinth User Guide | [plutus.cardano.intersectmbo.org](https://plutus.cardano.intersectmbo.org/docs) | 85 |
+| Cardano Docs | [docs.cardano.org](https://docs.cardano.org) | 83 |
+
+---
+
+## What I Delivered
+
+### 1. Full-Stack RAG Pipeline
+
+Built a complete retrieval-augmented generation system from the ground up:
+
+- Indexed 2,572 documents from 8 sources across the Cardano ecosystem
+- Semantic search with citation generation — every answer links back to the source document
+- Deployed on Railway with a live demo interface
+
+**Result:** [Live Demo](https://powerful-motivation-production.up.railway.app/)
+
+<Note>Live demo — knowledge base current as of December 2025.</Note>
+
+### 2. Zero-Hallucination Testing Protocol
+
+This is blockchain documentation. A hallucinated answer could mean a broken smart contract and real financial loss. I developed an adversarial testing framework specifically designed to surface hallucinations:
+
+- 20+ prompt engineering iterations
+- Tested against adversarial queries designed to break the model's accuracy
+- No hallucinations detected during testing
+
+### 3. Documentation
+
+Created comprehensive documentation for the system:
+
+- User guide for developers
+- System architecture overview
+- Prompt engineering decisions and rationale
+- Limitations documentation (what the assistant will and won't answer)
+
+<CardGroup cols={2}>
+  <Card title="2,572 Documents" icon="file-lines">
+    Indexed across 8 sources: Essential Cardano, IOG Research, Intersect Governance, Developer Portal, and more.
+  </Card>
+  <Card title="Zero Hallucinations" icon="shield-check">
+    Adversarial testing protocol with 20+ prompt iterations. No fabricated answers detected.
+  </Card>
+  <Card title="Citation Generation" icon="quote-right">
+    Every answer links back to source documents. Users can verify and dive deeper.
+  </Card>
+  <Card title="Blockchain Stakes" icon="triangle-exclamation">
+    Documentation errors here mean broken contracts and lost funds. Accuracy was non-negotiable.
+  </Card>
+</CardGroup>
+
+---
+
+## Tech Stack
+
+`Python` · `Vector Databases` · `RAG Pipelines` · `Prompt Engineering` · `Railway` · `Anthropic Claude`
