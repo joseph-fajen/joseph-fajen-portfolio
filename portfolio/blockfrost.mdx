@@ -3,30 +3,48 @@ title: "Blockfrost Platform"
 description: "Information architecture improvements and AI-powered FAQ development for a blockchain API for Cardano"
 ---
 
+{/*
+## Links on this page
+
+* [platform.blockfrost.io](https://platform.blockfrost.io/)
+
+* [platform.blockfrost.io/faq](https://platform.blockfrost.io/faq)
+
+* **The tool I created:** [ChatDoc-InsightMiner-PromptLab](https://github.com/joseph-fajen/ChatDoc-InsightMiner-PromptLab)
+*/}
+
 ## The Project
 
-[Blockfrost](https://blockfrost.io/) is a blockchain API provider for Cardano. During my time at Input Output Global, I was assigned to improve their platform documentation.
-
-**Live:** [platform.blockfrost.io](https://platform.blockfrost.io/)
+[Blockfrost](https://blockfrost.io/) is a blockchain API provider for Cardano. During my time at Input Output Global, for a brief period (two to three months), I was assigned to assess and improve their documentation. The team had not had a technical writer, so the documentation up to that point had been a side project of the developer team. 
 
 ---
 
 ## What I Delivered
 
-### Information Architecture Improvements
+### 1. Information Architecture Improvements
 
-The Blockfrost platform documentation needed restructuring to better serve developers at different stages of adoption. I:
+The Blockfrost platform documentation needed more general descriptions and definitions of concepts and offerings. It also needed restructuring to better serve developers at different stages of adoption. 
 
-- Analyzed the existing documentation structure against user journeys
-- Clarified developer-facing docs to help early adopters get up and running faster
-- Verified documentation accuracy against the actual API behavior
-- Improved navigation and discoverability
+My workflow included these steps:
 
-### AI-Powered FAQ Development
+- Analyze the existing documentation structure against user journeys
+- Verify documentation accuracy against the actual platform behavior
+- Clarify developer-facing docs to help early adopters get up and running faster
+- Improve navigation and discoverability
 
-The FAQ section required a different approach. Instead of guessing what users needed, I built tooling to analyze actual user conversations.
+**Result:** [platform.blockfrost.io](https://platform.blockfrost.io/)
 
-**The tool I created:** [ChatDoc-InsightMiner-PromptLab](https://github.com/joseph-fajen/ChatDoc-InsightMiner-PromptLab)
+### 2. AI-Powered FAQ Development
+
+The FAQ section required a different approach. I had inherited a FAQ page that was blank. But there were rich conversations going on between early adopters and the platform developers in the project's Discord channels. I wanted to find a way to capture the nuggets of all those exchanges and channel them into the FAQ page. 
+
+So I built a tool to analyze these real user conversations, identify the patterns in the questions being asked, and create first drafts of questions and answers that represented the key insights from the Discord conversations. Using this approach accelerated what would otherwise have taken more time to do by hand. 
+
+After careful reviewing and scrubbing of the tool outputs, we had a rich, categorized FAQ page. 
+
+**Result:** [platform.blockfrost.io/faq](https://platform.blockfrost.io/faq)
+
+> The tool I built, [ChatDoc-InsightMiner-PromptLab](https://github.com/joseph-fajen/ChatDoc-InsightMiner-PromptLab) toolkit, is open source on GitHub, and applicable to any documentation project where user conversation data is available.
 
 <CardGroup cols={2}>
   <Card title="User Need Analysis" icon="magnifying-glass">
@@ -46,21 +64,6 @@ The FAQ section required a different approach. Instead of guessing what users ne
     not assumptions.
   </Card>
 </CardGroup>
-
-**The result:** [platform.blockfrost.io/faq](https://platform.blockfrost.io/faq) — an FAQ section built on data about what users actually struggled with.
-
----
-
-## The point
-
-**When writing isn't enough, build the tooling.**
-
-Instead of guessing which questions users had, I:
-1. Built a tool to analyze their actual conversations
-2. Used that data to prioritize FAQ content
-3. Created documentation addressing verified user needs
-
-The ChatDoc-InsightMiner-PromptLab toolkit is [open source on GitHub](https://github.com/joseph-fajen/ChatDoc-InsightMiner-PromptLab) and applicable to any documentation project where user conversation data is available.
 
 ---
 
