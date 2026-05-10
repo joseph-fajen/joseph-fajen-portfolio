@@ -17,22 +17,13 @@
         ]
       },
       {
-        "group": "Writing Samples",
+        "group": "Portfolio",
         "pages": [
-          "samples/api-documentation",
-          "samples/product-manuals",
-          "samples/developer-guides",
-          "samples/ai-documentation",
-          "samples/articles"
-        ]
-      },
-      {
-        "group": "Projects",
-        "pages": [
-          "projects/cardano-marlowe",
-          "projects/blockfrost",
-          "projects/ai-tools",
-          "projects/docs-infrastructure"
+          "portfolio/marlowe",
+          "portfolio/aja-video",
+          "portfolio/ai-projects",
+          "portfolio/blockfrost",
+          "portfolio/articles"
         ]
       },
       {

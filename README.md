@@ -22,8 +22,7 @@ mintlify dev
 | `index.mdx` | Homepage |
 | `about.mdx` | Your story |
 | `resume.mdx` | Resume page |
-| `samples/*.mdx` | Writing samples |
-| `projects/*.mdx` | Project deep-dives |
+| `portfolio/*.mdx` | Portfolio pages |
 
 When adding/removing/renaming pages, update `docs.json` navigation to match.
 
