@@ -1,6 +1,6 @@
 ---
 title: "Blockfrost Platform"
-description: "Built an AI-powered toolkit to mine Discord conversations and turn them into documentation"
+description: "Built a toolkit to mine Discord conversations and turn them into documentation"
 ---
 
 ## The Project
@@ -15,11 +15,11 @@ I inherited a blank FAQ page.
 
 The signal was in Discord.
 
-Early adopters and platform developers were having rich, technically dense conversations in the project's Discord channels. Real questions. Real confusion points. Real answers. None of it captured anywhere a future developer could easily find it.
+Developers and early adopters were having dense technical conversations in the project's Discord channels. Questions, confusion, answers. None of it captured anywhere a future developer could easily find it.
 
-The conventional sources weren't available. No support tickets to mine, no completed user research, no internal documentation to repurpose. The engineers were too busy shipping to sit for long interviews.
+The usual sources weren't there. No support tickets. No user research. No internal docs to repurpose. The engineers were too busy shipping to sit for interviews.
 
-So the raw material existed — it was just in a format no documentation workflow knew how to ingest. And with months of backlog across multiple channels, reading it all by hand wasn't viable in the time I had.
+The raw material existed, just in a format no documentation workflow knows how to ingest. Months of backlog across multiple channels. Reading it by hand wasn't viable in the time I had.
 
 ---
 
@@ -27,29 +27,29 @@ So the raw material existed — it was just in a format no documentation workflo
 
 I built a tool.
 
-[ChatDoc-InsightMiner-PromptLab](https://github.com/joseph-fajen/ChatDoc-InsightMiner-PromptLab) is a Python toolkit that ingests chat logs into a vector database, runs specialized analytical prompts across three LLMs simultaneously (OpenAI, Anthropic, Gemini), and cross-validates the outputs to surface patterns rather than single-model artifacts.
+[ChatDoc-InsightMiner-PromptLab](https://github.com/joseph-fajen/ChatDoc-InsightMiner-PromptLab) is a Python toolkit that ingests chat logs into a vector database, runs analytical prompts across three LLMs at once (OpenAI, Anthropic, Gemini), and cross-validates the outputs. If all three models independently flag the same pattern, it's probably real. If only one does, it may be an artifact.
 
-For Blockfrost, that meant feeding it months of Discord history and asking it to identify the recurring questions, confusion points, and documentation gaps that real users were actually experiencing.
+I fed it months of Discord history and asked it to find the recurring themes, questions and points of confusion.
 
 <CardGroup cols={2}>
   <Card title="Multi-Model Validation" icon="code-compare">
-    Cross-validated findings across three LLMs to filter out model artifacts and surface only patterns all three independently identified.
+    Ran findings through three LLMs. Kept only what all three flagged independently.
   </Card>
 
   <Card title="Pattern Identification" icon="chart-network">
-    Surfaced recurring questions, confusion points, and documentation gaps from months of community conversation that would have taken weeks to identify by hand.
+    Found recurring questions and confusion points from months of conversation.
   </Card>
 
   <Card title="Prioritized Output" icon="list-check">
-    Generated a ranked list of FAQ topics based on actual user friction — not assumptions about what developers might want to know.
+    Ranked FAQ topics by actual user friction, not assumptions about what developers might want to know.
   </Card>
 
   <Card title="Human-in-the-Loop" icon="user-pen">
-    The toolkit produced first drafts. I reviewed, edited, and validated every answer against the platform before publication.
+    The toolkit wrote first drafts. I reviewed and checked every answer against the platform, then got developers to review before publishing.
   </Card>
 </CardGroup>
 
-After review and editing, we had a rich, categorized FAQ grounded in real user behavior.
+After review and editing, we had a categorized FAQ based on what people had actually asked about.
 
 **Result:** [platform.blockfrost.io/faq](https://platform.blockfrost.io/faq)
 
@@ -57,15 +57,15 @@ After review and editing, we had a rich, categorized FAQ grounded in real user b
 
 ## The Broader Pattern
 
-Most documentation work starts after someone has decided what to document. Here, I had to figure that out first.
+Most documentation starts after someone decides what to document. Here, I had to figure that out first.
 
-The toolkit is open source and applies to any documentation project with community conversation data — Discord, Slack, support channels, forum threads. The diagnostic approach generalizes beyond Blockfrost.
+The toolkit is open source and works for any project with community conversation data. 
 
 ---
 
 ## Also Delivered: IA Improvements
 
-Alongside the FAQ work, I assessed the broader platform documentation and restructured it to better serve developers at different stages of adoption — adding conceptual overviews, clarifying developer-facing docs, and improving navigation.
+I also restructured the broader platform docs: added conceptual overviews, clarified the developer pages, fixed the navigation.
 
 **Result:** [platform.blockfrost.io](https://platform.blockfrost.io/)
 
