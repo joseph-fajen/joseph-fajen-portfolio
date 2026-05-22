@@ -2,10 +2,19 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Joseph Fajen",
+  "description": "Portfolio of a Senior Technical Writer specializing in developer documentation",
+  "favicon": "✍️",
+  "appearance": {
+    "default": "dark"
+  },
   "colors": {
     "primary": "#2563EB",
     "light": "#60A5FA",
-    "dark": "#1E40AF"
+    "dark": "#1E40AF",
+    "anchors": {
+      "from": "#2563EB",
+      "to": "#7C3AED"
+    }
   },
     "navigation": {
     "groups": [
@@ -13,7 +22,8 @@
         "group": "Home",
         "pages": [
           "index",
-          "about"
+          "about",
+          "contact"
         ]
       },
       {
@@ -50,7 +60,7 @@
     "primary": {
       "type": "button",
       "label": "Get in Touch",
-      "href": "mailto:joefajen@gmail.com"
+      "href": "/contact"
     }
   },
   "footer": {
