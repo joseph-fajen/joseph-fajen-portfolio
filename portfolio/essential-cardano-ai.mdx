@@ -5,11 +5,9 @@ description: "An accuracy-first RAG chatbot indexing 2,572 documents across eigh
 
 ## The Project
 
-At Input Output Global, there are many documentation sites covering multiple projects and knowledge sources. A common question that would arise was, "Which doc site should I look at to find what I'm looking for, and how do I find it?"
+At Input Output Global (IOG), there are many documentation sites covering multiple projects and knowledge sources. A common question was, "Which doc site should I look at to find what I'm looking for, and how do I find it?"
 
-I designed and built the Essential Cardano AI Assistant — a RAG chatbot that could synthesize answers, with citations, from eight selected sources and reduce that friction.
-
-The Essential Cardano AI Assistant brought together 2,572 files from across eight documentation sites:
+To address that reader pain point, I designed and built the Essential Cardano AI Assistant — a RAG chatbot that could synthesize answers, with citations, from 2,572 files across eight documentation sites:
 
 | Source | URL | Files |
 |--------|-----|-------|
@@ -28,23 +26,25 @@ The Essential Cardano AI Assistant brought together 2,572 files from across eigh
 
 ### 1. Full-Stack RAG Pipeline
 
-Built a complete retrieval-augmented generation system from the ground up:
+I built a complete retrieval-augmented generation system from the ground up:
 
 - Indexed 2,572 documents from 8 sources across the Cardano ecosystem
 - Semantic search with citation generation — every answer links back to the source document
+- Next.js with the Vercel AI SDK and assistant-ui component library for the chat interface, styled with Tailwind
 - Deployed on Railway with a live demo interface
 
 **Result:** [Live Demo](https://powerful-motivation-production.up.railway.app/)
 
 <Note>Live demo — knowledge base current as of December 2025.</Note>
 
-### 2. Zero-Hallucination Testing Protocol
+### 2. Citation-First Design
 
-This is blockchain documentation. A hallucinated answer could mean a broken smart contract and real financial loss. I developed an adversarial testing framework specifically designed to surface hallucinations:
+Every response links back to source documents — users can verify claims with one click. To make citations meaningful, I built date awareness into the knowledge base:
 
-- 20+ prompt engineering iterations
-- Tested against adversarial queries designed to break the model's accuracy
-- No hallucinations detected during testing
+- Extracted and normalized publish dates across 2,500+ source files
+- Prioritized recent content in retrieval to avoid stale answers
+- Consistent date citation format so users know how current the information is
+- 20+ system prompt iterations to enforce citation standards and IOG's editorial style
 
 ### 3. Documentation
 
@@ -59,14 +59,14 @@ Created comprehensive documentation for the system:
   <Card title="2,572 Documents" icon="file-lines">
     Indexed across 8 sources: Essential Cardano, IOG Research, Intersect Governance, Developer Portal, and more.
   </Card>
-  <Card title="Zero Hallucinations" icon="shield-check">
-    Adversarial testing protocol with 20+ prompt iterations. No fabricated answers detected.
+  <Card title="Date-Aware Pipeline" icon="calendar-check">
+    Publish dates extracted, recent content prioritized, consistent citation format.
   </Card>
   <Card title="Citation Generation" icon="quote-right">
     Every answer links back to source documents. Users can verify and dive deeper.
   </Card>
-  <Card title="Blockchain Stakes" icon="triangle-exclamation">
-    Documentation errors here mean broken contracts and lost funds. Accuracy was non-negotiable.
+  <Card title="20+ Prompt Iterations" icon="sliders">
+    System prompt refined to enforce citation standards, date formatting, and IOG's editorial style.
   </Card>
 </CardGroup>
 
