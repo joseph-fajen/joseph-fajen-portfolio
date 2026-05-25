@@ -5,7 +5,7 @@
   "description": "Portfolio of a Senior Technical Writer specializing in developer documentation",
   "favicon": "✍️",
   "appearance": {
-    "default": "dark"
+    "default": "light"
   },
   "colors": {
     "primary": "#2563EB",
@@ -15,16 +15,9 @@
     "navigation": {
     "groups": [
       {
-        "group": "Home",
-        "pages": [
-          "index",
-          "about",
-          "contact"
-        ]
-      },
-      {
         "group": "Portfolio",
         "pages": [
+          "index",
           "portfolio/marlowe",
           "portfolio/essential-cardano-ai",
           "portfolio/aja-video",
@@ -32,12 +25,6 @@
           "portfolio/isee-v2",
           "portfolio/book-of-archon",
           "portfolio/articles"
-        ]
-      },
-      {
-        "group": "Resume",
-        "pages": [
-          "resume"
         ]
       }
     ]
