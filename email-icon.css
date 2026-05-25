@@ -1,0 +1,9 @@
+/* Email icon hover effect to match LinkedIn/GitHub footer icons */
+footer a[href^="mailto:"] svg {
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+footer a[href^="mailto:"]:hover svg {
+  opacity: 1;
+}
