@@ -1,41 +1,56 @@
 ---
 title: "ISEE v2"
-description: "A multi-model AI orchestration system for idea synthesis through structured debate"
+description: "A multi-agent orchestration system for idea synthesis through structured debate"
 ---
 
 ## The Project
 
-ISEE v2 (Idea Synthesis and Extraction Engine) is a system I built in 2026 to solve a specific problem: how do you generate many ideas and reliably extract the best ones?
+ISEE v2 (Idea Synthesis and Extraction Engine) is a multi-agent system I built in 2026 to solve a specific problem: how do you systematically generate a large set of diverse LLM perspectives from a single query and reliably extract the best ones?
 
-The approach: run prompts through multiple language models using multiple cognitive frameworks, then use structured debate to surface the strongest concepts.
+This is a complete reconceptualization of ISEE v1, which I built in 2025. I learned so much building v1, and in the year since, I got clearer about what I wanted it to do and what I wanted the user experience to be. I also developed a sharper understanding of agentic engineering patterns. v2 isn't an iteration; it's a ground-up rebuild using a more precise and methodical development process. 
+
+As a result, ISEE v2 orchestrates 6 specialized agents through a fixed pipeline, generates ~60 responses through multi-model synthesis, clusters them by intellectual angle, then runs a structured tournament debate where advocates argue and a skeptic challenges until only the strongest three ideas survive. The user can read the briefing only and/or a transcript of the entire debate. 
 
 ---
 
-## What I Delivered
+## What I Built
 
-### 1. Multi-Model Orchestration
+### 1. Multi-Agent Pipeline
 
-Runs any prompt through 6 different language models, each applying 11 distinct cognitive frameworks — 66 combinations per prompt. This generates a wide range of perspectives on any problem.
+Six specialized agents, each with a distinct role and strict input/output contracts:
 
-### 2. Tournament Debate System
+| Agent | Role |
+|-------|------|
+| **Prep Agent** | Generates 3-5 knowledge domains specific to the query |
+| **Clustering Agent** | Groups ~60 responses by intellectual angle (not source) |
+| **Advocate Agents** | Each argues for their cluster's value |
+| **Skeptic Agent** | Challenges all advocates with specific critiques |
+| **Synthesis Agent** | Selects 3 ideas, writes the briefing |
+| **Translation Agent** | Converts to plain language with action items |
 
-Synthesized ideas compete in a structured tournament debate to surface the strongest concepts. Adversarial evaluation is built in — ideas have to defend themselves against challenges.
+### 2. Multi-Model Synthesis Layer
 
-### 3. Operations Dashboard
+Runs the query through 6 heterogeneous LLMs × 11 cognitive frameworks × 3-5 dynamically generated domains — roughly 60 parallel calls. The models are chosen for cognitive diversity.
 
-Real-time cost tracking across all model providers. Full observability into which models and frameworks contribute most to final outputs. Helps optimize for quality-per-dollar.
+### 3. Tournament Debate System
+
+Clustered ideas compete in a structured debate where Advocates argue, a Skeptic challenges each argument, and Advocates either rebut or concede. Low-quality responses self-eliminate when they can't defend against skeptical challenges. The user sees which ideas survived and why.
+
+### 4. Operations Dashboard
+
+Tracks how much each run costs, which models are reliable, and where time is being spent. Shows cost breakdown by provider and model, success rates for each LLM, and how long each pipeline stage takes.
 
 **Result:** [github.com/joseph-fajen/isee-v2](https://github.com/joseph-fajen/isee-v2)
 
 <CardGroup cols={2}>
-  <Card title="6 LLMs x 11 Frameworks" icon="grid">
-    66 combinations per prompt. Generates diverse perspectives across models and cognitive approaches.
+  <Card title="6 Specialized Agents" icon="users">
+    Plan-and-execute pipeline with bounded autonomy. Each agent has strict TypeScript contracts.
+  </Card>
+  <Card title="~60 Parallel LLM Calls" icon="grid">
+    6 LLMs × 11 frameworks × 3-5 dynamic domains. Heterogeneous models for genuine cognitive diversity.
   </Card>
   <Card title="Tournament Debate" icon="trophy">
-    Ideas compete head-to-head. Adversarial evaluation surfaces the strongest concepts.
-  </Card>
-  <Card title="Cost Tracking" icon="chart-bar">
-    Real-time observability into spend across model providers. Optimize for quality-per-dollar.
+    Advocates argue, skeptic challenges, rebuttals defend. Ideas that can't survive scrutiny are eliminated.
   </Card>
   <Card title="Open Source" icon="github">
     Full codebase available on GitHub.
@@ -46,4 +61,4 @@ Real-time cost tracking across all model providers. Full observability into whic
 
 ## Tech Stack
 
-`Python` · `Anthropic Claude` · `OpenAI` · `Google Gemini` · `Multi-Model Orchestration` · `Pydantic AI`
+`TypeScript` · `Bun` · `Anthropic Claude SDK` · `OpenRouter` · `Multi-Agent Orchestration` · `SQLite`
