@@ -3,7 +3,7 @@
   "theme": "mint",
   "name": "Joseph Fajen",
   "description": "Portfolio of a Senior Technical Writer specializing in developer documentation",
-  "favicon": "✍️",
+  "favicon": "/favicon.svg",
   "appearance": {
     "default": "light"
   },
