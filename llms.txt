@@ -1,0 +1,26 @@
+# Joseph Fajen
+
+> Senior Technical Writer with 20+ years of experience specializing in developer documentation, information architecture, and AI-assisted content workflows. Portfolio showcases blockchain documentation, RAG systems, multi-agent orchestration, and hardware/API documentation.
+
+## Portfolio
+
+- [Marlowe Documentation](https://josephfajen.mintlify.app/portfolio/marlowe.md): 17,900 lines of smart contract documentation for Cardano's financial DSL. 124 files, 41 tutorials, 93-schema OpenAPI spec, 5 user personas. Built from the ground up over 13 months.
+- [Essential Cardano AI](https://josephfajen.mintlify.app/portfolio/essential-cardano-ai.md): RAG chatbot indexing 2,572 documents across 8 Cardano ecosystem sites. Citation-first design with date-aware retrieval. Built with Python, vector databases, and Anthropic Claude.
+- [Blockfrost Platform](https://josephfajen.mintlify.app/portfolio/blockfrost.md): Built ChatDoc-InsightMiner-PromptLab to mine Discord conversations into FAQ documentation. Multi-LLM validation (OpenAI, Anthropic, Gemini) with cross-validation.
+- [AJA Video Systems](https://josephfajen.mintlify.app/portfolio/aja-video.md): 70+ product manuals and REST API documentation for professional video hardware. Single-author at scale from 2016-2022.
+- [ISEE v2](https://josephfajen.mintlify.app/portfolio/isee-v2.md): Multi-agent orchestration system with 6 specialized agents. Runs ~60 parallel LLM calls through tournament debate to extract strongest ideas. TypeScript, Bun, OpenRouter.
+- [Book of Archon](https://josephfajen.mintlify.app/portfolio/book-of-archon.md): Official 10-chapter onboarding guide for Archon (21k+ stars). Adversarial Writer vs. Attacker workflow with 7/10+ quality gates.
+- [Articles](https://josephfajen.mintlify.app/portfolio/articles.md): Published articles on blockchain security, developer experience, and smart contract verification for IOG blog.
+
+## External Projects
+
+- [Enhanced Marlowe API Reference](https://joseph-fajen.github.io/marlowe-api-docs/): Improved OpenAPI spec with semantic operation tags, workflow guidance, and structured response documentation.
+- [Essential Cardano AI Demo](https://powerful-motivation-production.up.railway.app/): Live RAG chatbot demo (knowledge base current as of December 2025).
+- [ChatDoc-InsightMiner-PromptLab](https://github.com/joseph-fajen/ChatDoc-InsightMiner-PromptLab): Python toolkit for mining chat logs into documentation via multi-LLM analysis.
+- [ISEE v2 Source](https://github.com/joseph-fajen/isee-v2): Full codebase for the multi-agent idea synthesis system.
+
+## Optional
+
+- [Contact](https://josephfajen.mintlify.app/contact.md): Email and professional links
+- [LinkedIn](https://www.linkedin.com/in/josephfajen7782211/): Professional profile
+- [GitHub](https://github.com/joseph-fajen): Active projects and contributions
